@@ -85,7 +85,7 @@ body.is-playing h1 em { background: linear-gradient(90deg, var(--accent), #fff1c
 .track.soon .tdur { font-style: italic; }
 
 .scene { display: grid; grid-template-columns: 300px 1fr; gap: 28px; margin: 44px 0 24px; padding: 24px; background: var(--bg2); border-radius: 12px; border: 1px solid var(--line); scroll-margin-top: 16px; }
-.scene img[hidden] { display: none; }
+.scene[hidden], .lyrics[hidden], .scene img[hidden] { display: none !important; }
 .scene img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 8px; display: block; box-shadow: 0 14px 34px rgba(0,0,0,.5); }
 .scene h2 { font: 700 34px/1.15 var(--serif); margin: 0 0 16px; color: var(--accent); }
 .scene blockquote { margin: 0; font: italic 500 22px/1.5 var(--serif); border-left: 2px solid var(--wave); padding-left: 16px; }
