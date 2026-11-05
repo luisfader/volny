@@ -59,7 +59,17 @@ window.TREKI = [
     duration: "4:19"
   },
   {
-    id: "07-tajnyj-dozhd",
+    id: "07-moya-vselennaya",
+    title: "Моя Вселенная",
+    chapter: "Глава 24",
+    scene: "Прощание над тетрадью",
+    img: "vselennaya.jpg",
+    quote: "— Мы пойдём разными дорогами, да? Ты — туда, куда ушла крепость. А я — здесь. Но я всё равно буду рядом.\n— Ты — мой мир, Луис. Моя Вселенная. Навсегда.",
+    song: true,
+    duration: "2:20"
+  },
+  {
+    id: "08-tajnyj-dozhd",
     title: "Тайный дождь",
     chapter: "Глава 24",
     scene: "Песня из окна под дождём",
