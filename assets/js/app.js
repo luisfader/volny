@@ -16,7 +16,7 @@
     <li class="track${c.audio === false ? " soon" : ""}" data-i="${i}">
       <button class="tplay" type="button" aria-label="Слушать «${esc(c.title)}»">${String(i + 1).padStart(2, "0")}</button>
       <div class="tmeta">
-        <span class="ttitle">${esc(c.title)}</span>
+        <span class="ttitle">${esc(c.title)}${c.song ? ' <span class="tag">песня</span>' : ""}</span>
         <span class="tscene">${esc(c.chapter)} · ${esc(c.scene)}</span>
       </div>
       <span class="tdur">${c.audio === false ? "скоро" : esc(c.duration || "")}</span>
@@ -30,6 +30,26 @@
     $("sceneMeta").textContent = c.chapter + " · " + c.scene;
     $("sceneTitle").textContent = c.title;
     $("sceneQuote").innerHTML = c.quote.split("\n").map(esc).join("<br>");
+    showLyrics(c);
+  }
+
+  // Текст песни (только для песен со словами): строфы через пустую строку, [Припев] — припев
+  async function showLyrics(c) {
+    const box = $("lyrics");
+    box.hidden = true;
+    if (!c.song) return;
+    try {
+      const r = await fetch("teksty/" + c.id + ".md");
+      if (!r.ok) return;
+      const txt = (await r.text()).replace(/^#.*$/m, "").trim();
+      $("lyricsBody").innerHTML = txt.split(/\n\s*\n/).map((st) => {
+        const lines = st.split("\n").map((l) => esc(l.trim()));
+        const chorus = /^\[Припев\]$/.test(lines[0]);
+        if (chorus) lines.shift();
+        return `<p class="${chorus ? "chorus" : ""}">${chorus ? '<span class="label">Припев</span>' : ""}${lines.join("<br>").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>")}</p>`;
+      }).join("");
+      if (list[current] === c) box.hidden = false;
+    } catch (e) { /* открыто как файл */ }
   }
 
   function play(i) {
