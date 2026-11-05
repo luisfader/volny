@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Волны любви — музыка</title>
+  <meta name="description" content="Мелодии Луиса из романа Роберта Фадера «Волны любви. Крепость в полумраке».">
+  <meta property="og:title" content="Волны любви — музыка">
+  <meta property="og:description" content="Мелодии Луиса из романа «Волны любви. Крепость в полумраке».">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="waves" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <header class="hero">
+    <img class="hero-bg" src="assets/img/hero.jpg" alt="">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Вердеград · Музыка из романа</p>
+      <h1>Волны <em>любви</em></h1>
+      <p class="lead">Крепость в полумраке. Девять мелодий, которые Луис сочинил для Натальи.</p>
+      <p class="quote">«— Музыкант исчез…<br>— Но волны остались.»</p>
+      <button class="btn" id="playAll" type="button">▶ Слушать с начала</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <img class="cover" src="assets/img/cover.jpg" alt="Обложка романа «Волны любви. Крепость в полумраке»">
+      <div>
+        <h2>Музыка, которая стала крепостью</h2>
+        <p>Однажды ночью к Луису пришла мелодия — настойчивая и тревожная, будто требовала, чтобы он дал ей голос. Потом Наталья попросила: «Придумай мелодию для меня». Так началась музыка, которая защищала людей Вердеграда — и которую попытались превратить в приказ.</p>
+        <p>Здесь мелодии собраны в том порядке, в котором они звучат в книге. К каждой — сцена и строки из романа.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Мелодии</h2>
+    <ol class="tracks" id="tracks"></ol>
+
+    <section class="scene" id="scene" hidden>
+      <img id="sceneImg" src="" alt="">
+      <div class="scene-text">
+        <p class="eyebrow" id="sceneMeta"></p>
+        <h2 id="sceneTitle"></h2>
+        <blockquote id="sceneQuote"></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Музыка: Луис Фадер · Из романа <a href="https://luisfader.github.io/litmir/#/volny-lyubvi-krepost">«Волны любви. Крепость в полумраке»</a> на сайте «Литература перед сном».</p>
+  </footer>
+
+  <div class="player" id="player" hidden>
+    <button class="pbtn" id="prev" type="button" aria-label="Назад">⏮</button>
+    <button class="pbtn big" id="toggle" type="button" aria-label="Играть">▶</button>
+    <button class="pbtn" id="next" type="button" aria-label="Дальше">⏭</button>
+    <div class="pinfo">
+      <span id="nowTitle"></span>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Позиция">
+    </div>
+    <span class="ptime" id="time">0:00</span>
+  </div>
+  <audio id="audio" preload="none"></audio>
+
+  <script src="assets/js/treki.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
