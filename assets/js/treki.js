@@ -77,7 +77,16 @@ window.TREKI = [
       "duration": "4:19"
   },
   {
-      "id": "09-slyshish-menya",
+      "id": "09-gimn-verdegrada",
+      "title": "Гимн Вердеграда",
+      "chapter": "Глава 17",
+      "scene": "Город поднимается",
+      "img": "gimn.jpg",
+      "quote": "— Мне нужна помощь тех, кто готов поверить в нас, — сказала Наталья. — В эту странную, прекрасную, раненую крепость, которая стала нашим домом.",
+      "duration": "3:08"
+  },
+  {
+      "id": "10-slyshish-menya",
       "title": "Слышишь меня?",
       "chapter": "Глава 18",
       "scene": "Мелодия, которая нашла дорогу",
@@ -87,7 +96,7 @@ window.TREKI = [
       "duration": "4:42"
   },
   {
-      "id": "10-moya-vselennaya",
+      "id": "11-moya-vselennaya",
       "title": "Моя Вселенная",
       "chapter": "Глава 24",
       "scene": "Прощание над тетрадью",
@@ -97,7 +106,7 @@ window.TREKI = [
       "duration": "2:20"
   },
   {
-      "id": "11-dozhd",
+      "id": "12-dozhd",
       "title": "Дождь",
       "chapter": "Глава 24",
       "scene": "Вопросы на площади",
@@ -106,7 +115,7 @@ window.TREKI = [
       "duration": "2:56"
   },
   {
-      "id": "12-tajnyj-dozhd",
+      "id": "13-tajnyj-dozhd",
       "title": "Тайный дождь",
       "chapter": "Глава 24",
       "scene": "Песня из окна под дождём",
@@ -116,7 +125,7 @@ window.TREKI = [
       "duration": "2:43"
   },
   {
-      "id": "13-glubina-lyubvi",
+      "id": "14-glubina-lyubvi",
       "title": "Глубина любви",
       "chapter": "Глава 25",
       "scene": "Два года спустя",
