@@ -96,7 +96,17 @@ window.TREKI = [
       "duration": "4:42"
   },
   {
-      "id": "11-moya-vselennaya",
+      "id": "11-pomnish",
+      "title": "Помнишь?",
+      "chapter": "Глава 23",
+      "scene": "Маленькие островки",
+      "img": "pomnish.jpg",
+      "quote": "Холодная мелодия над крышами не исчезла, но в ней появилась трещина — маленькая, как остров в тумане.",
+      "song": true,
+      "duration": "3:30"
+  },
+  {
+      "id": "12-moya-vselennaya",
       "title": "Моя Вселенная",
       "chapter": "Глава 24",
       "scene": "Прощание над тетрадью",
@@ -106,7 +116,7 @@ window.TREKI = [
       "duration": "2:20"
   },
   {
-      "id": "12-dozhd",
+      "id": "13-dozhd",
       "title": "Дождь",
       "chapter": "Глава 24",
       "scene": "Вопросы на площади",
@@ -115,7 +125,7 @@ window.TREKI = [
       "duration": "2:56"
   },
   {
-      "id": "13-tajnyj-dozhd",
+      "id": "14-tajnyj-dozhd",
       "title": "Тайный дождь",
       "chapter": "Глава 24",
       "scene": "Песня из окна под дождём",
@@ -125,7 +135,7 @@ window.TREKI = [
       "duration": "2:43"
   },
   {
-      "id": "14-glubina-lyubvi",
+      "id": "15-glubina-lyubvi",
       "title": "Глубина любви",
       "chapter": "Глава 25",
       "scene": "Два года спустя",
