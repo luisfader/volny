@@ -25,7 +25,10 @@
   function showScene(i) {
     const c = list[i];
     $("scene").hidden = false;
-    $("sceneImg").src = "assets/img/" + c.img;
+    const img = $("sceneImg");
+    img.hidden = false;
+    img.onerror = () => { img.hidden = true; };
+    img.src = "assets/img/" + c.img;
     $("sceneImg").alt = "Иллюстрация к главе: " + c.scene;
     $("sceneMeta").textContent = c.chapter + " · " + c.scene;
     $("sceneTitle").textContent = c.title;
