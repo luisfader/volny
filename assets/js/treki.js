@@ -77,7 +77,17 @@ window.TREKI = [
       "duration": "4:19"
   },
   {
-      "id": "09-moya-vselennaya",
+      "id": "09-slyshish-menya",
+      "title": "Слышишь меня?",
+      "chapter": "Глава 18",
+      "scene": "Мелодия, которая нашла дорогу",
+      "img": "slyshish.jpg",
+      "quote": "Наталья закрыла глаза. Губы двигались почти беззвучно — не для Виктора и не для лиса. Для него.\n— Мой любимый, ты меня слышишь?",
+      "song": true,
+      "duration": "3:52"
+  },
+  {
+      "id": "10-moya-vselennaya",
       "title": "Моя Вселенная",
       "chapter": "Глава 24",
       "scene": "Прощание над тетрадью",
@@ -87,7 +97,7 @@ window.TREKI = [
       "duration": "2:20"
   },
   {
-      "id": "10-dozhd",
+      "id": "11-dozhd",
       "title": "Дождь",
       "chapter": "Глава 24",
       "scene": "Вопросы на площади",
@@ -96,7 +106,7 @@ window.TREKI = [
       "duration": "2:56"
   },
   {
-      "id": "11-tajnyj-dozhd",
+      "id": "12-tajnyj-dozhd",
       "title": "Тайный дождь",
       "chapter": "Глава 24",
       "scene": "Песня из окна под дождём",
@@ -106,7 +116,7 @@ window.TREKI = [
       "duration": "2:43"
   },
   {
-      "id": "12-glubina-lyubvi",
+      "id": "13-glubina-lyubvi",
       "title": "Глубина любви",
       "chapter": "Глава 25",
       "scene": "Два года спустя",
