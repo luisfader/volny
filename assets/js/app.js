@@ -17,7 +17,7 @@
       <button class="tplay" type="button" aria-label="Слушать «${esc(c.title)}»">${String(i + 1).padStart(2, "0")}</button>
       <div class="tmeta">
         <span class="ttitle">${esc(c.title)}${c.song ? ' <span class="tag">песня</span>' : ""}</span>
-        <span class="tscene">${esc(c.chapter)} · ${esc(c.scene)}</span>
+        <span class="tscene">${esc([c.chapter, c.scene].filter(Boolean).join(" · "))}</span>
       </div>
       <span class="tdur">${c.audio === false ? "скоро" : esc(c.duration || "")}</span>
     </li>`).join("");
@@ -29,10 +29,11 @@
     img.hidden = false;
     img.onerror = () => { img.hidden = true; };
     img.src = "assets/img/" + c.img;
-    $("sceneImg").alt = "Иллюстрация к главе: " + c.scene;
-    $("sceneMeta").textContent = c.chapter + " · " + c.scene;
+    $("sceneImg").alt = "Иллюстрация: " + (c.scene || c.title);
+    $("sceneMeta").textContent = [c.chapter, c.scene].filter(Boolean).join(" · ");
     $("sceneTitle").textContent = c.title;
-    $("sceneQuote").innerHTML = c.quote.split("\n").map(esc).join("<br>");
+    $("sceneQuote").hidden = !c.quote;
+    $("sceneQuote").innerHTML = (c.quote || "").split("\n").map(esc).join("<br>");
     showLyrics(c);
   }
 
