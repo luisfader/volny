@@ -106,6 +106,16 @@ window.TREKI = [
       "duration": "3:30"
   },
   {
+      "id": "18-tetrad",
+      "title": "Тетрадь",
+      "chapter": "Глава 24",
+      "scene": "Тетрадь на полу",
+      "img": "cover.jpg",
+      "quote": "А на последней странице была надпись:\n«Подарю ей, когда всё закончится».",
+      "song": true,
+      "duration": "4:05"
+  },
+  {
       "id": "12-moya-vselennaya",
       "title": "Моя Вселенная",
       "chapter": "Глава 24",
