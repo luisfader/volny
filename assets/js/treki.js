@@ -48,6 +48,16 @@ window.TREKI = [
       "duration": "2:34"
   },
   {
+      "id": "19-volny-lyubvi-pesnya",
+      "title": "Волны любви",
+      "chapter": "Глава 7",
+      "scene": "Волны над площадью",
+      "img": "volny.jpg",
+      "quote": "Музыка гнала их не как враг, а как правда, перед которой невозможно устоять.",
+      "song": true,
+      "duration": "3:35"
+  },
+  {
       "id": "06-sudba",
       "title": "Судьба",
       "chapter": "Глава 7",
