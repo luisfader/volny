@@ -113,7 +113,7 @@ window.TREKI = [
       "img": "cover.jpg",
       "quote": "А на последней странице была надпись:\n«Подарю ей, когда всё закончится».",
       "song": true,
-      "duration": "4:05"
+      "duration": "4:03"
   },
   {
       "id": "12-moya-vselennaya",
