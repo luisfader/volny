@@ -12,7 +12,8 @@
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const hasAudio = (i) => list[i] && list[i].audio !== false;
 
-  $("tracks").innerHTML = list.map((c, i) => `
+  $("tracks").innerHTML = list.map((c, i) => `${c.part && (i === 0 || list[i - 1].part !== c.part) ? `
+    <li class="part-title" aria-hidden="false"><span>${esc(c.part)}</span></li>` : ""}
     <li class="track${c.audio === false ? " soon" : ""}" data-i="${i}">
       <button class="tplay" type="button" aria-label="Слушать «${esc(c.title)}»">${String(i + 1).padStart(2, "0")}</button>
       <div class="tmeta">
